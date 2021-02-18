@@ -141,6 +141,14 @@ footer p {
 		font-size: 1.25rem;
 	}
 
+	#textOnTop h2 {
+		font-size: 1.5rem;
+	}
+
+	#textOnTop h3 {
+		font-size: 1.125rem;
+	}
+
 	#theProductsImg div {
 		display: inline-flex;
 		font-size: 1.5rem;
@@ -148,10 +156,12 @@ footer p {
 		margin: 1.125rem auto;
 		width: 100%;
 	}
-	#theProductsImg {
-		justify-content: flex-start;
 
+	#theProductsImg {
+		display: inline-flex;
+		flex-direction: column;
 	}
+
 	#theProductsImg div p {
 		padding-left: 1.125rem;
 	}
