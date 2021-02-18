@@ -1,0 +1,169 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-family: 'Ranchers', cursive;
+}
+
+header img {
+	width: 70%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Courgette', cursive;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+ul{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	font-size: 2rem;
+	margin-top: 0px;
+}
+
+#theShop, #theProducts, #theTeam {
+	font-family: 'Courgette', cursive;
+	text-align: center;
+}
+
+#theGGBanner {
+	display: flex;
+	align-items: center;
+	
+	background-image: url("img/greengrocer.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	height: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#textOnTop {
+	font-size: 1.5rem;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	text-align: center;
+	width: 100%; 
+}
+
+/*theProducts*/
+
+#theProductsImg {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 1.125rem 10%;
+}
+
+#theProductsImg img {
+	width: 300px;
+	height: 200px;
+}
+
+#theProductsImg div p {
+	font-size: 1.25rem;
+}
+
+/*theTeam*/
+
+#theTeamImg {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#theTeamImg div {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+}
+
+#theTeamImg img {
+	display: block;
+	margin: 0 2rem -2rem 2rem;
+	max-width:400px;
+	max-height:300px;
+	width: auto;
+	height: auto;
+}
+
+#theTeamImg div p {
+	display: block;
+	font-family: 'Ballet', cursive;
+	font-size: 2.5rem;
+}
+
+footer {
+	width: 100%;
+	background-color: black;
+	color: lightgrey;
+	display: inline-flex;
+	justify-content: space-between;
+	font-size: .9rem;
+	font-family: 'Antic Slab', serif;
+}
+
+footer div img {
+	margin-left: 15%;
+	height: 100px;
+	width: auto;
+}
+
+footer#info {
+	display:flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+footer p {
+	margin: 10px 30px;
+}
+
+@media only screen and (max-width: 766px) {
+	#theProductsImg div {
+		display: inline-flex;
+		margin-left: 20px;
+		font-size: 1.5rem;
+		align-items: center;
+		margin: 1.125rem 0;
+	}
+	#theProductsImg {
+		justify-content: flex-start;
+
+	}
+	#theProductsImg div p {
+		padding-left: 1.125rem;
+	}
+
+	#theTeamImg div#belinda,
+	#theTeamImg div#george {
+		flex-flow: row;
+	}
+
+	#theTeamImg div#stuart {
+		flex-flow: row-reverse;
+	}
+	#theTeamImg img {
+		margin: 1rem;
+	}
+
+	footer {
+		align-items: center;	
+	}
+}
