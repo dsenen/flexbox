@@ -136,12 +136,17 @@ footer p {
 }
 
 @media only screen and (max-width: 766px) {
+
+	ul {
+		font-size: 1.25rem;
+	}
+
 	#theProductsImg div {
 		display: inline-flex;
-		margin-left: 20px;
 		font-size: 1.5rem;
 		align-items: center;
-		margin: 1.125rem 0;
+		margin: 1.125rem auto;
+		width: 100%;
 	}
 	#theProductsImg {
 		justify-content: flex-start;
@@ -149,6 +154,11 @@ footer p {
 	}
 	#theProductsImg div p {
 		padding-left: 1.125rem;
+	}
+
+	#theProductsImg img {
+		width: 150px;
+		height: 100px;
 	}
 
 	#theTeamImg div#belinda,
